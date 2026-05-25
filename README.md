@@ -70,7 +70,7 @@ Identificación de características genómicas relevantes:
 Construcción de relaciones evolutivas entre las muestras para explorar la diversidad genética y posibles agrupamientos epidemiológicos.
 
 ## Esquema del pipeline
-![Pipeline](https://raw.githubusercontent.com/mecalderon/Tutorial_Honduras/blob/main/Figures/Pipeline.png)
+![Pipeline](https://raw.githubusercontent.com/mecalderon/Tutorial_Honduras/main/Figures/Pipeline.png)
 
 ## Instalación de herramientas
 Clona el repositorio y ejecuta el script de instalación con los siguientes comandos:
