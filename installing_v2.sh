@@ -2,7 +2,6 @@ echo "#######     starting the installation of the packages required for INCIENS
 conda config --add channels defaults
 conda config --add channels bioconda
 conda config --add channels conda-forge
-conda config --set channel_priority strict
 
 echo "############ Mamba installation ##################"
 conda install -n base -c conda-forge mamba -y
@@ -41,11 +40,7 @@ echo "##################### roary were installing within microenv environnent  #
 
 
 echo "################ starting ariba creation and installation #############"
-conda create -n ariba_env -y
-source activate ariba_env
-mamba install -c bioconda mummer -y
-sudo pip3 install ariba
-conda deactivate
+conda create -n ariba_env -c conda-forge -c bioconda ariba=2.14.6 samtools=1.9 setuptools -y
 echo "###################### ariba_env environment created and ariba was installed ######################"
 echo "############################# activate using: conda activate ariba_env ############################"
 
